@@ -25,4 +25,4 @@ if __name__ == "__main__":
         O = neural_net.predict(X_test_normalized[i])
         print("Prediction: " + str(O))
         print("Actual: " + str(y_test[i]))
-    neural_net.export_model("sigmoidXsigmoid.json")
+    neural_net.export_model("example_model.json")

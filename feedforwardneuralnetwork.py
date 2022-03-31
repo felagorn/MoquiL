@@ -121,7 +121,7 @@ class FeedForwardNeuralNetwork:
                                 self.model[layer_id]["neurons"][neuron_id][weight_id] += (-1) * learning_rate * average_d * average_x
 
             # Check total error
-            print("Epoch " + str(epoch) + ", error=" + str(epoch_error))
+            print("Epoch " + str(epoch) + ", error=" + str(epoch_error), end="\r", flush=True)
             if epoch_error < error_threshold:
                 below_threshold = True
             epoch += 1
